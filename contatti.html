@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it" data-lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contatti — Latium Capital | Contact</title>
+<meta name="description" content="Contatta Latium Capital: investitori qualificati e fornitori della PA italiana. Richiedi documentazione o una valutazione dei crediti.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="container nav">
+    <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="9" fill="#0B2545"/><path d="M12 30 L12 20 A8 8 0 0 1 28 20 L28 30" fill="none" stroke="#C8A24B" stroke-width="2.6" stroke-linecap="round"/><line x1="9" y1="32.5" x2="31" y2="32.5" stroke="#C8A24B" stroke-width="2.2" stroke-linecap="round"/></svg><span class="name">Latium Capital<small>London</small></span></a>
+    <ul class="menu">
+      <li><a href="index.html"><span class="it">Home</span><span class="en">Home</span></a></li>
+      <li><a href="come-funziona.html"><span class="it">Come funziona</span><span class="en">How it works</span></a></li>
+      <li><a href="investitori.html"><span class="it">Investitori</span><span class="en">Investors</span></a></li>
+      <li><a href="cedenti.html"><span class="it">Cedi le fatture</span><span class="en">Sell invoices</span></a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="chi-siamo.html"><span class="it">Chi siamo</span><span class="en">About</span></a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang"><button data-l="it">IT</button><button data-l="en">EN</button></div>
+      <a class="btn btn-gold" href="contatti.html"><span class="it">Contatti</span><span class="en">Contact</span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow"><span class="it">Contatti</span><span class="en">Contact</span></span>
+    <h1><span class="it">Parliamone</span><span class="en">Let's talk</span></h1>
+    <p class="lead"><span class="it">Che tu sia un investitore o un fornitore della PA, raccontaci la tua esigenza: rispondiamo in giornata.</span><span class="en">Whether you're an investor or a PA supplier, tell us what you need — we reply the same day.</span></p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:48px;align-items:start">
+      <div>
+        <form class="lc" onsubmit="event.preventDefault(); this.style.display='none'; document.getElementById('thanks').style.display='block';">
+          <div class="field">
+            <label><span class="it">Sono un… *</span><span class="en">I am a… *</span></label>
+            <select class="it" required><option value="">—</option><option>Investitore qualificato</option><option>Fornitore della PA (voglio cedere crediti)</option><option>Altro / partner</option></select>
+            <select class="en" required><option value="">—</option><option>Qualified investor</option><option>PA supplier (I want to sell receivables)</option><option>Other / partner</option></select>
+          </div>
+          <div class="row2">
+            <div class="field"><label><span class="it">Nome e cognome *</span><span class="en">Full name *</span></label><input type="text" required></div>
+            <div class="field"><label><span class="it">Azienda / Ente</span><span class="en">Company / Entity</span></label><input type="text"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Email *</label><input type="email" required></div>
+            <div class="field"><label><span class="it">Telefono</span><span class="en">Phone</span></label><input type="tel"></div>
+          </div>
+          <div class="field"><label><span class="it">Messaggio</span><span class="en">Message</span></label><textarea rows="4"></textarea></div>
+          <label style="display:flex;gap:10px;align-items:flex-start;font-size:.85rem;color:var(--muted)"><input type="checkbox" required style="margin-top:4px;width:auto"><span class="it">Ho letto l'avvertenza sui rischi e l'informativa privacy e acconsento al trattamento dei dati per essere ricontattato.</span><span class="en">I have read the risk warning and the privacy notice and consent to my data being processed so you can contact me.</span></label>
+          <button class="btn btn-gold" type="submit" style="justify-self:start"><span class="it">Invia richiesta</span><span class="en">Send request</span></button>
+        </form>
+        <div id="thanks" style="display:none" class="card"><h3><span class="it">Grazie!</span><span class="en">Thank you!</span></h3><p><span class="it">Abbiamo ricevuto la tua richiesta e ti ricontatteremo a breve.</span><span class="en">We've received your request and will get back to you shortly.</span></p></div>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:14px"><span class="it">Nota tecnica: questo form è dimostrativo. Per renderlo operativo va collegato a un servizio email/CRM (es. Formspree, un endpoint backend o un connettore).</span><span class="en">Technical note: this form is a demo. To make it live, connect it to an email/CRM service (e.g. Formspree, a backend endpoint, or a connector).</span></p>
+      </div>
+      <div>
+        <div class="card"><h3><span class="it">Recapiti</span><span class="en">Get in touch</span></h3><p style="margin-bottom:6px"><strong>Latium Capital Ltd</strong><br>London, United Kingdom</p><p style="margin-bottom:6px">✉ <a href="mailto:administration@latium-capital.com">administration@latium-capital.com</a></p><p><span class="it">Orari: Lun–Ven, 9:00–18:00 (CET)</span><span class="en">Hours: Mon–Fri, 9:00–18:00 (CET)</span></p></div>
+        <div class="card" style="margin-top:24px;background:var(--navy-2);color:#C7D2E2;border-color:var(--navy-3)"><h3 style="color:#fff"><span class="it">Investitori qualificati</span><span class="en">Qualified investors</span></h3><p><span class="it">Richiedi la documentazione informativa riservata e una call conoscitiva senza impegno.</span><span class="en">Request the confidential information pack and a no-obligation introductory call.</span></p></div>
+        <div class="risk" style="margin-top:24px"><span class="it">Le informazioni inviate saranno trattate in via riservata. Questo sito non offre prodotti al pubblico retail; i servizi d'investimento sono riservati a investitori qualificati. Capitale a rischio.</span><span class="en">Information you send will be treated confidentially. This site does not offer products to the retail public; investment services are reserved for qualified investors. Capital at risk.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site">
+  <div class="container">
+    <div class="cols">
+      <div><a class="brand" href="index.html" style="margin-bottom:16px"><svg class="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="9" fill="#13315C"/><path d="M12 30 L12 20 A8 8 0 0 1 28 20 L28 30" fill="none" stroke="#C8A24B" stroke-width="2.6" stroke-linecap="round"/><line x1="9" y1="32.5" x2="31" y2="32.5" stroke="#C8A24B" stroke-width="2.2" stroke-linecap="round"/></svg><span class="name">Latium Capital<small>London</small></span></a><p style="max-width:300px"><span class="it">Investimenti in crediti commerciali verso la Pubblica Amministrazione italiana.</span><span class="en">Investing in Italian public-sector trade receivables.</span></p></div>
+      <div><h4><span class="it">Navigazione</span><span class="en">Navigate</span></h4><a href="come-funziona.html"><span class="it">Come funziona</span><span class="en">How it works</span></a><a href="investitori.html"><span class="it">Investitori</span><span class="en">Investors</span></a><a href="cedenti.html"><span class="it">Cedi le fatture</span><span class="en">Sell invoices</span></a><a href="faq.html">FAQ</a></div>
+      <div><h4><span class="it">Società</span><span class="en">Company</span></h4><a href="chi-siamo.html"><span class="it">Chi siamo</span><span class="en">About</span></a><a href="contatti.html"><span class="it">Contatti</span><span class="en">Contact</span></a></div>
+      <div><h4>Latium Capital Ltd</h4><p style="margin:0">London, United Kingdom<br>administration@latium-capital.com</p></div>
+    </div>
+    <div class="legal"><span class="it"><strong>Avvertenza.</strong> Latium Capital Ltd è una società di diritto inglese [in costituzione]. Il presente sito ha finalità puramente informative e non costituisce offerta al pubblico, sollecitazione all'investimento né consulenza. Il capitale è a rischio e i rendimenti non sono garantiti. © 2026 Latium Capital Ltd.</span><span class="en"><strong>Disclaimer.</strong> Latium Capital Ltd is a company incorporated under English law [in formation]. This website is for information only and does not constitute a public offer, an investment solicitation or advice. Capital is at risk and returns are not guaranteed. © 2026 Latium Capital Ltd.</span></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
